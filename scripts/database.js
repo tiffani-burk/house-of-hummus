@@ -149,13 +149,13 @@ export const getOrders = () => {
 }
 
 //create and export setter functions that willl set state 
-const setMainDish = (id) => {
+export const setMainDish = (id) => {
     return database.tempOrder.mainDishId = id
 }
-const setVeggies = (id) => {
+export const setVeggies = (id) => {
     return database.tempOrder.veggieId = id
 }
-const setSides =(id) => {
+export const setSides =(id) => {
     return database.tempOrder.sideId = id
 }
 
