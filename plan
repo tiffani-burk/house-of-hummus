@@ -47,7 +47,7 @@
         //create a variable with the event targeted as the value
         // if the id on the button clicked equals "", then invoke the funtion that is in responsible for taking the temp state and making it permanant (found in data file)
 //create and export a funciton that is responsible for all the main html in the document
-        //return html representation 
+        //return html representation and invoke the previous html functions in this function 
 
 //in main.js, we are going to rendor the HTML
 //import the mainHTML file

@@ -4,7 +4,7 @@ import { getMainDish, setMainDish } from "./database.js";
 const mainDishes = getMainDish()
 
 //create and export a function for HTML representation of an unordered list with radio inputs
-const mainDishChoices = () => {
+export const mainDishChoices = () => {
     const html = '<ul>'
 
     let mainDishArray = mainDishes.map(mainDish => {
