@@ -50,7 +50,7 @@
         //return html representation and invoke the previous html functions in this function 
 
 //in main.js, we are going to rendor the HTML
-//import the mainHTML file
+//import the mainHTML file function
 //create a query selector and set the id in the main container as area to put the rendoring
 //create a funciton to rendor the html 
     //use .innerHTML on the variable declared above, invoke the mainHTML file as value

@@ -21,7 +21,7 @@ document.addEventListener(
 //create a function that is responsible for all the HTML representation in the document 
 //return the HTML rep and invoke the earlier functions
 
-const htmlRepresentation = () => {
+export const htmlRepresentation = () => {
     return `
     <section> 
     <h1>Laura Kathryn's House of Hummus</h1>
