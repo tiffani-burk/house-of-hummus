@@ -4,7 +4,7 @@ const sides = getSides()
 
 //create and export a function for HTML representation of an unordered list with radio inputs
 export const sidesChoices = () => {
-    const html = '<ul>'
+    let html = '<ul>'
 
     let sideItemsArray = sides.map(side => {
         return `<li>

@@ -1,4 +1,4 @@
-import { customOrder } from "./database";
+import { customOrder } from "./database.js";
 import { mainDishChoices } from "./mainDish.js";
 import { listOfOrders } from "./orders.js";
 import { sidesChoices } from "./sides.js";

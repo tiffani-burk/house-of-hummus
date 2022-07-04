@@ -5,7 +5,7 @@ const veggies = getVeggies()
 
 //create and export a function for HTML representation of an unordered list with radio inputs
 export const veggiesChoices = () => {
-    const html = "<ul>"
+    let html = "<ul>"
 
     //use .map to iterate over veggies array and invoke the function, while converting objects to li elements
     let veggieItemsArray = veggies.map(veggie => {
