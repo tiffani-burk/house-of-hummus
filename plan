@@ -1,0 +1,64 @@
+// create ERD
+// create files for each module
+    //veggies.js mainDish.js sides.js orders.js mainHTML.js main.js data.js
+// create basic html structure 
+// add data to database in form of an array of objects
+//  -veggies, -sides - mainDish -customOrder with faux data
+// add an empty object to later store custom orders in 
+// create and export getter functions for data
+//create and export setter functions that will set the state 
+//create a function whose role is to to take the temp state of the order building funciton and make it permanant
+
+//in veggie side and mainDish files, import setter and getter funcitons 
+// invoke the getter function and declare it to a a variable 
+//create a function that returns an HTML representation of radio button menu 
+        //- this function should have an a variable with an unordered list as it's value
+        //- make sure it loops through the array of objects, using a for of loop or .map
+        //- in the loop, it should take the variable created earlier and add it to an input 
+            //- make sure the input has a type, name and value (the id property)
+        //- add earlier variable to a closing </ul>
+        //-return the variable 
+//create a event listener for a change event, to show which item has been chosen   
+        //if the name targeted matches the name we put into the name of the input on the previous function,
+        //then invoke the setter function and pass in the targeted value (dont forget to parseInt it-turn into integer)
+      
+//in orders.js
+//import all getter functions
+//create a function to calculate the total cost of items in the order
+        //takes an order param
+        // find the price of each item, by nesting seperate functions 
+                //use .find to find first element in veggies that meets the condition of the id property on veggies matching the veggieId on the order
+                //do the same for the main dish and sides
+                //store the sum of these values to a variable, using .price to access their cost
+                //create a variable to convert a number to a string with USD currency value
+                //interpolate and return the price as a n HTML string, wrapped in a <li>
+//create and export a function to show a list of orders on the page
+    //create a variable and invoke the order getter function 
+    //create a variable for the unordered list
+    //create a variable to loop over the orders using .map and pass in the orderbuilding function above
+    // add the top variable to the looping var and join with .join("")
+    //add the top variable to closing unordered list tag
+    //return the top variable
+
+//in your mainHTML file
+//import all veggie, sides, maindish and order functions you just created
+//also, import the customorder funciton in your database
+//create an event listener that will listen for the add order button click and add the order to the screen
+        //create a variable with the event targeted as the value
+        // if the id on the button clicked equals "", then invoke the funtion that is in responsible for taking the temp state and making it permanant (found in data file)
+//create and export a funciton that is responsible for all the main html in the document
+        //return html representation 
+
+//in main.js, we are going to rendor the HTML
+//import the mainHTML file
+//create a query selector and set the id in the main container as area to put the rendoring
+//create a funciton to rendor the html 
+    //use .innerHTML on the variable declared above, invoke the mainHTML file as value
+//invoke the function above
+//create an event listener that is listening for the state to be changed. 
+    //invoke the function above in the event listener
+
+
+
+
+
