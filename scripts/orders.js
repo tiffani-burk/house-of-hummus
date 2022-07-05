@@ -1,4 +1,4 @@
-import { getMainDish, getSides, getOrders, getVeggies } from "./database.js";
+import { getMainDish, getSides, getOrders, getVeggies, customOrder } from "./database.js";
 const mainDishes = getMainDish()
 const sides = getSides()
 const veggies = getVeggies()
@@ -36,17 +36,29 @@ const buildOrder = (order) => {
 }
 
 //create and export a function to return a list of the orders 
-export const listOfOrders = ()=> {
+export const listOfOrders = () => {
     //create a variable and invoke the order getter function 
     const orders = getOrders()
     //create a variable for the unordered list
-    const html = "<ul>"
+    let html = "<ul>"
     //create a variable to loop over the orders using .map and pass in the orderbuilding function above
     const ordersArray = orders.map(buildOrder)
 
     // add the html var to the orderArray and join with .join("")
     html += ordersArray.join("")
     //add html to closing tag for UL
-    html += '</ul>'
+    html += "</ul>"
     return html
 }
+
+//create an event listener for the button click
+document.addEventListener(
+    "click",
+    (clickEvent) => {
+        const buttonClicked = clickEvent.target
+
+        if (buttonClicked.id === "button"){
+            customOrder() //invoke function responsible for taking the temp state and making it perm
+        }
+    }
+)

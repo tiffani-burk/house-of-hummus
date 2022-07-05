@@ -5,18 +5,18 @@ const mainDishes = getMainDish()
 
 //create and export a function for HTML representation of an unordered list with radio inputs
 export const mainDishChoices = () => {
-    let html = '<ul>'
+    let html = '<article>'
 
     let mainDishArray = mainDishes.map(mainDish => {
-        return `<li>
+        return `<p>
        <input type="radio" name="mainDish" value="${mainDish.id}">${mainDish.name}</input>
-       </li>`
+       </p>`
     })
 
     //join all the strings in the array into a single string
     html += mainDishArray.join("")
     //close UL
-    html += '</ul>'
+    html += '</article>'
     return html
 }
 
@@ -26,7 +26,7 @@ export const mainDishChoices = () => {
 document.addEventListener(
     "change",
     (changeEvent) => {
-        if (changeEvent.target.name === 'mainDish'){
+        if (changeEvent.target.name === 'mainDish') {
             setMainDish()
         }
     }

@@ -1,0 +1,33 @@
+.choicesList {
+    display: flex;
+    flex-direction: row;
+}
+
+.options {
+    background-color: rgb(237 240 243);
+    width: 30%;
+    margin: 1rem;
+    padding: 1rem;
+    box-shadow: 5px 5px 5px grey;
+}
+
+button {
+    background-color: orange;
+    padding: .5rem;
+}
+
+.button-div {
+    text-align: center;
+}
+
+h1{ 
+    text-align: center;
+}
+body {
+    font-family: 'Oswald', sans-serif;
+}
+.sales {
+    margin: 2rem;
+    text-align: left;
+}
+

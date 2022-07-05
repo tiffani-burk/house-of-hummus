@@ -4,18 +4,18 @@ const sides = getSides()
 
 //create and export a function for HTML representation of an unordered list with radio inputs
 export const sidesChoices = () => {
-    let html = '<ul>'
+    let html = '<article>'
 
     let sideItemsArray = sides.map(side => {
-        return `<li>
+        return `<p>
             <input type="radio" name="side" value="${side.id}">${side.name}</input>
-        </li>`
+        </p>`
     })
 
     //join all the strings in the array into a single string
     html += sideItemsArray.join("")
     //close UL
-    html += '</ul>'
+    html += '</article>'
     return html
 }
 

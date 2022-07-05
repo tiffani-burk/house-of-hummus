@@ -166,8 +166,10 @@ export const customOrder = () => {
     //add a new primary key to the object
     const lastIndex = database.customOrders.length - 1
 
+    newOrder.id = database.customOrders[lastIndex].id + 1
+
     //add a timestamp to the order
-    newOrder.customOrder.timestamp = Date.now()
+    newOrder.timestamp = Date.now()
 
     //add a newOrder object to the custom order state by pushing the newOrder into the customOrders in the db
     database.customOrders.push(newOrder)

@@ -23,29 +23,29 @@ document.addEventListener(
 
 export const htmlRepresentation = () => {
     return `
-    <section> 
     <h1>Laura Kathryn's House of Hummus</h1>
-    <article>
+    <section class="choicesList"> 
+    <article class="options">
     <h2>Main Dishes</h2>
     ${mainDishChoices()}
     </article>
-    <article>
+    <article class="options">
     <h2>Vegetables</h2>
     ${veggiesChoices()}
     </article>
-    <article>
+    <article class="options">
     <h2>Sides</h2>
     ${sidesChoices()}
     </article>
     </section>
-    <div>
+    <div class="button-div">
     <button id="button">Order Now</button>
     <div>
-    <section>
+    <section class="sales">
     <h2>
     Monthly Sales
     </h2>
-    ${listOfOrders}
+    ${listOfOrders()}
     </section>
     `
 }
