@@ -26,7 +26,7 @@ document.addEventListener(
     "change",
     (changeEvent) => {
         if (changeEvent.target.name === 'side') {
-            setSides()
+            setSides(parseInt(changeEvent.target.value))
         }
     }
 )

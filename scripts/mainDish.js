@@ -27,7 +27,7 @@ document.addEventListener(
     "change",
     (changeEvent) => {
         if (changeEvent.target.name === 'mainDish') {
-            setMainDish()
+            setMainDish(parseInt(changeEvent.target.value))
         }
     }
 )
